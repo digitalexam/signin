@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英聽試題資訊</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        body {
+            font-family: '標楷體', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 200px auto;
+            background-color: #fff;
+            position: relative;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 10px;
+            border-right: 1px solid #ccc;
+            background-color: #f2f2f2;
+        }
+        .sidebar button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .sidebar button:hover {
+            background-color: #ccc;
+        }
+        .header {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .header button {
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header .chinese { background-color: red; color: white; }
+        .header .enr { background-color: pink; color: black; }
+        .header .enl { background-color: orange; color: black; }
+        .header .math { background-color: yellow; color: black; }
+        .header .nature { background-color: green; color: white; }
+        .header .society { background-color: blue; color: white; }
+        .header img {
+            width: 350px;
+            height: auto;
+            cursor: pointer;
+        }
+        .header h1 {
+            font-size: 32px;
+        }
+        .info-section {
+            margin-top: 60px; /* Adjusted to ensure it appears below the header */
+            text-align: center;
+        }
+        .info-section img {
+            width: calc(100% - 10px);
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="chinese" onclick="window.location.href='2705test.html'">國文</button>
+            <button class="enr" onclick="window.location.href='2705test-enr.html'">英閱</button>
+            <button class="enl" onclick="location.reload()">英聽</button>
+            <button class="math" onclick="window.location.href='2705test-math.html'">數學</button>
+            <button class="nature" onclick="window.location.href='2705test-nature.html'">自然</button>
+            <button class="society" onclick="window.location.href='2705test-society.html'">社會</button>
+            <h1>陳奕銜</h1>
+            <img src="logo2.png" alt="Logo" onclick="location.reload()">
+        </div>
+        <div class="sidebar">
+            <button onclick="window.location.href='2705end.html'">模考結果</button>
+            <button onclick="window.location.href='https://digitalexam.github.io/signin/test/564010292705'">個人資料</button>
+            <button onclick="window.location.href='https://digitalexam.github.io/114cap/114cap/114cap-js.html'">登出</button>
+            <button onclick="window.location.href='2705test.html'">試題資訊</button>
+            <button onclick="window.location.href='2705answer.html'">作答分析</button>
+        </div>
+        <div class="info-section">
+            <h1>題目資訊(第3題有經過修改，在此題號為1)</h1>
+            <img src="英聽1.png" alt="國文題目資訊">
+            <img src="英聽2.png" alt="英聽題目資訊2">
+            <img src="英聽3.png" alt="英聽題目資訊3">
+            <h2>題量配置</h2>
+            <img src="英聽4.png" alt="國文題量配置">
+        </div>
+    </div>
+</body>
+</html>
